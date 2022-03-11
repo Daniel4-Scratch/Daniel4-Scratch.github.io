@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!--Frame Work-->
 <head>
-<style>
-h1 {
-color: red;
-}
-</style>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<h1>404</h1>
-<p>
-This page does not exist anymore, or you have made a typo
-</p>
-</body>
-</html>
+    <!-- Nonconforming but doesn't hurt to include -->
+    <meta http-equiv="Status" content="404 Not Found">
+</head><body></body>
+<link rel="stylesheet" href="/website/assets/css/style.css">
+<script src="/website/assets/js/page.js"></script>
+<script>
+  template(
+    '404',
+    '<center><h1>404</h1></center>',
+    '<center>404... Seems like your lost<br><img src="/assets/cdn/404-alonzo.svg"></center>'
+  );</script>
