@@ -11,7 +11,7 @@ var template = function(title, banner, content) {
     document.body.innerHTML +=
       '<div class="header">' +
       banner +
-      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="#64748B"  style=";"" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0C50 1e2 80 1e2 1e2.0z" class="thinggy"></path></svg> <div class="content">' +
+      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="var(--theme)"  style=";"" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0C50 1e2 80 1e2 1e2.0z" class="thinggy"></path></svg> <div class="content">' +
       credits +
       "" +
       content +
