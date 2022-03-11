@@ -15,14 +15,14 @@ var template = function(title, banner, content) {
       credits +
       "" +
       content +
-      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="#f5f5f5" style=";  transform: scaleX(-1);" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 1e2C20 0 50 0 1e2 1e2z" class="thinggy"></path></svg>';
+      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="var(--grey)" style=";  transform: scaleX(-1);" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 1e2C20 0 50 0 1e2 1e2z" class="thinggy"></path></svg>';
   } else {
     document.body.innerHTML +=
       '<div class="header">' +
       banner +
-      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="#64748B"  style=";"" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0C50 1e2 80 1e2 1e2.0z" class="thinggy"></path></svg> <div class="content">' +
+      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="var(--theme)"  style=";"" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0C50 1e2 80 1e2 1e2.0z" class="thinggy"></path></svg> <div class="content">' +
       content +
-      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="#f5f5f5" style=";  transform: scaleX(-1);" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 1e2C20 0 50 0 1e2 1e2z" class="thinggy"></path></svg> ';
+      '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="var(--grey)" style=";  transform: scaleX(-1);" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 1e2C20 0 50 0 1e2 1e2z" class="thinggy"></path></svg> ';
   }
   document.body.innerHTML +=
     '<div id="snackbar">Some text some message..</div> <div class="footer"> © 2020-2022 Daniel4-Scratch <br><br> <section> <h3>Useful</h3> <a href="https://github.com/Daniel4-Scratch/website">Repo</a> <br> <a href="https://github.com/Daniel4-Scratch/website">README</a> </section> <section> <h3>Pages</h3> <a href="credits.html">Credits</a> <br> <a href="status.html">Status</a> </section> </div> </body> </html>';
