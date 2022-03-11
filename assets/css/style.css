@@ -58,7 +58,7 @@ body {
   border:var(--theme) solid 3px;
 }
 .button:hover {
-  border:#9BA6B6 solid 3px;
+  border: rgba(255, 0, 0, 0.27) solid 3px;
   background-color: #ffffff;
   color: bLACK;
   cursor: url('https://cdn.glitch.me/85581a5c-3d3a-4adb-9d44-dbf08483c8ae%2Faero_link.cur?v=1636877839735');
