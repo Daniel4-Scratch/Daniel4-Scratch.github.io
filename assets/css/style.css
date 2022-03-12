@@ -82,7 +82,7 @@ body {
   border:var(--theme) solid 3px;
 }
 .button-white:hover{
-  border:#9BA6B6 solid 3px;
+  border: rgba(255, 0, 0, 0.27) solid 3px;
 }
 .navbar1.right {
   margin-top: -0em;
