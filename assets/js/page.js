@@ -6,7 +6,7 @@ var template = function(title, banner, content) {
   document.body.innerHTML =
     '<!DOCTYPE html> <html lang="en"> <head> <link rel="icon" href="https://avatars.githubusercontent.com/u/65277548?v=4"> <link rel="manifest" href="/manifest.webmanifest"/> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>' +
     title +
-    ' | Website</title> <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <link rel="stylesheet" href="/assets/css/style.css"> <script src="/assets/js/script.js" defer></script> </head> <body> <div class="navbar" id="myTopnav"> <a href="index.html" class="logo"><img src="https://avatars.githubusercontent.com/u/65277548?v=4" width="27" class="r-do" style="border-radius:8px;"> Daniel4-Scratch </a> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="ri-menu-fill"></i>    </a> <a href="https://github.com/Daniel4-Scratch/" class="navbar1 button-white right">Github</a> <a href="about.html" class="navbar1 button right">About</a>';
+    ' | Daniel4-Scratch</title> <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <link rel="stylesheet" href="/assets/css/style.css"> <script src="/assets/js/script.js" defer></script> </head> <body> <div class="navbar" id="myTopnav"> <a href="index.html" class="logo"><img src="https://avatars.githubusercontent.com/u/65277548?v=4" width="27" class="r-do" style="border-radius:8px;"> Daniel4-Scratch </a> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="ri-menu-fill"></i>    </a> <a href="https://github.com/Daniel4-Scratch/" class="navbar1 button-white right">Github</a> <a href="about.html" class="navbar1 button right">About</a> <a href="socials.html" class="navbar1 button right">Socials</a>';
   if (title == "Credits") {
     document.body.innerHTML +=
       '<div class="header">' +
@@ -25,7 +25,7 @@ var template = function(title, banner, content) {
       '</div><svg id="thinggy" xmlns="http://www.w3.org/2000/svg" class="w-100 thinggy" height="100" width="100%" fill="var(--grey)" style=";  transform: scaleX(-1);" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 1e2C20 0 50 0 1e2 1e2z" class="thinggy"></path></svg> ';
   }
   document.body.innerHTML +=
-    '<div id="snackbar">Some text some message..</div> <div class="footer"> © 2020-2022 Daniel4-Scratch <br><br> <section> <h3>Useful</h3> <a href="https://github.com/Daniel4-Scratch/website">Repo</a> <br> <a href="https://github.com/Daniel4-Scratch/website">README</a> </section> <section> <h3>Pages</h3> <a href="credits.html">Credits</a> <br> <a href="status.html">Status</a> </section> </div> </body> </html>';
+    '<div id="snackbar">Some text some message..</div> <div class="footer"> © 2020-2022 Daniel4-Scratch <br><br> <section> <h3>Socials</h3> <a href="https://youtube.com/c/daniel4scratch">Youtube</a> <br> <a href="https://discord.gg/qNCzFsuZth">Join My Discord</a> </section> <section> <h3>Pages</h3> <a href="credits.html">Credits</a> <br> <a href="status.html">Status</a> </section> </div> </body> </html>';
 
   document.body.innerHTML += '<div class="bg-footer"></div>'
 
