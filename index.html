@@ -15,9 +15,14 @@
     'Home',
     '<span class="title"><center><img>Hello there!</span><br><span class="sub">I&#x27;m Daniel4-Scratch</span></center> ',
     'Website is currently in development. Vist my <a href="https://sites.google.com/view/daniel4-scratch-github/">temporary website</a> <br><br><center><iframe src="https://daniel4-scratch.is-a.dev/adverts/generate" style="border:none; width:728px; height:90px; overflow:hidden;" scrolling="no"></iframe></center>'
-  );</script><
+  );
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  document.iframe.innerHTML.style = "display:none;"
+  }
+</script>
 <style>
   .thinggy{
     background:white;
   }
+
 </style>
