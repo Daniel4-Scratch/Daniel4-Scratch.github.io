@@ -44,8 +44,7 @@ function showsnackbar(textinput) {
   }, 3000);
 }
 
-
-
+/*Mobile Dash*/
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className == "navbar") {
