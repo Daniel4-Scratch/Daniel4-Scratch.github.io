@@ -53,3 +53,8 @@ function myFunction() {
     x.className = "navbar";
   }
 }
+
+//if on mobile hide element "advert"
+if (window.innerWidth < 600) {
+  document.getElementById("advert").style.display = "none";
+}
