@@ -77,39 +77,50 @@
   </style>
   <script>
     function handleSubmit() {
-      var form = document.getElementById('contact-form');
-      var status = document.getElementById('status');
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('status');
 
-      form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-        var formData = new FormData(form);
-        var xhr = new XMLHttpRequest();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var title = document.getElementById('title').value;
+    var content = document.getElementById('content').value;
 
-        xhr.open(form.method, "https://api.daniel4scratch.repl.co/contact");
-        xhr.setRequestHeader('Accept', 'application/json');
-
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState !== XMLHttpRequest.DONE) return;
-
-          if (xhr.status === 200) {
-            status.textContent = 'Form submitted successfully.';
-            status.style.color = '#4CAF50'
-          } else if(xhr.status === 429){
-            status.textContent = 'You can only submit once an hour.';
-            status.style.color = '#FF4C4C' 
-          }
-          else {
-            status.textContent = 'An error occurred. Please try again later.';
-            status.style.color = '#FF4C4C' 
-          }
-
-          status.style.display = 'block';
-        };
-
-        xhr.send(formData);
-      });
+    if (!name || !email || !title || !content) {
+      status.textContent = 'Please fill out all fields.';
+      status.style.color = '#FF4C4C';
+      status.style.display = 'block';
+      return;
     }
+
+    var formData = new FormData(form);
+    var xhr = new XMLHttpRequest();
+
+    xhr.open(form.method, "https://api.daniel4scratch.repl.co/contact");
+    xhr.setRequestHeader('Accept', 'application/json');
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+
+      if (xhr.status === 200) {
+        status.textContent = 'Form submitted successfully.';
+        status.style.color = '#4CAF50';
+      } else if (xhr.status === 429) {
+        status.textContent = 'You can only submit once an hour.';
+        status.style.color = '#FF4C4C';
+      } else {
+        status.textContent = 'An error occurred. Please try again later.';
+        status.style.color = '#FF4C4C';
+      }
+
+      status.style.display = 'block';
+    };
+
+    xhr.send(formData);
+  });
+}
   </script>
 </head>
 <body>
