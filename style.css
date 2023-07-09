@@ -129,7 +129,7 @@ body {
   margin:10px;
   font-size:15px;
   border-radius: 5px;
-  background-color: var(--black);
+  background-color: #17171cc7;
   padding: 10px;
   transition:0.3s;
   display: none;
