@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <style>
+    :root{
+        --theme:#4CAF50;
+        --background:#f2f2f2
+        
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background);
+    }
+    
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      color:rgba(0, 0, 0, 0.8);
+    }
+    
+    a{
+        color: rgba(0, 0, 0, 0.4);
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration:underline rgba(76, 175, 80, 0.5) 1.5px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    input:focus, textarea:focus{
+        outline:#4CAF50 1.5px solid;
+    }
+    
+    input[type="submit"] {
+      background-color: var(--theme);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    #status {
+      margin-top: 10px;
+      display: none;
+      margin-left:1em;
+    }
+    .footer{
+        display:flex;
+    }
+  </style>
+  <script>
+    function handleSubmit() {
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('status');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+
+        xhr.open(form.method, "https://api.daniel4scratch.repl.co/contact");
+        xhr.setRequestHeader('Accept', 'application/json');
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+
+          if (xhr.status === 200) {
+            status.textContent = 'Form submitted successfully.';
+            status.style.color = '#4CAF50'
+          } else if(xhr.status === 429){
+            status.textContent = 'You can only submit once an hour.';
+            status.style.color = '#FF4C4C' 
+          }
+          else {
+            status.textContent = 'An error occurred. Please try again later.';
+            status.style.color = '#FF4C4C' 
+          }
+
+          status.style.display = 'block';
+        };
+
+        xhr.send(formData);
+      });
+    }
+  </script>
+</head>
+<body>
+  <form id="contact-form" method="POST">
+    <h2>Contact</h2>
+    <p>
+        Please fill out every field and I will try get back to you via email. Thanks
+    </p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" maxlength="30" placeholder="Max 30 Char" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" maxlength="60" placeholder="Max 60 Char" required><br><br>
+    
+    <label for="content">Content:</label>
+    <textarea type="textbox" id="content" name="content" maxlength="2000" placeholder="Markdown supported. Max 2000 Char" required></textarea>
+    <br><br>
+    
+    <div class="footer"><input type="submit" value="Submit" onclick="handleSubmit()">
+    <div id="status"></div></div>
+  </form>
+  <div style="text-align:center; width:100%; margin-top:1em; font-size:15px">
+  <a href="https://daniel4-scratch.is-a.dev">Back</a>
+  </div>
+</body>
+</html>
