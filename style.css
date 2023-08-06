@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('./assets/ReadexPro.ttf');
+@import url('assets/ReadexPro.ttf');
 
 :root{
 	--theme:#ff6060;
@@ -122,7 +122,7 @@ body{
 	background-color: #202020;
 }
 .banner{
-	background: url(/assets/trees.jpg);
+	background: url(assets/trees.jpg);
 	background-size: cover;
 	height: 150px;
 	width: 100%;
@@ -143,23 +143,23 @@ body{
 	margin: 0.5em 0.5em 0.5em 0.5em;
 }
 .sicon.discord{
-	background: url(/assets/icons/discord.svg);
+	background: url(assets/icons/discord.svg);
 	background-size: cover;
 }
 .sicon.github{
-	background: url(/assets/icons/github.svg);
+	background: url(assets/icons/github.svg);
 	background-size: cover;
 }
 .sicon.twitter{
-	background: url(/assets/icons/twitter.svg);
+	background: url(assets/icons/twitter.svg);
 	background-size: cover;
 }
 .sicon.postlit{
-	background: url(/assets/icons/postlit.svg);
+	background: url(assets/icons/postlit.svg);
 	background-size: cover;
 }
 .sicon.youtube{
-	background: url(/assets/icons/youtube.svg);
+	background: url(assets/icons/youtube.svg);
 	background-size: cover;
 }
 .project{
