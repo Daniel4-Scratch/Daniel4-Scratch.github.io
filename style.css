@@ -203,3 +203,25 @@ body{
 	text-decoration: none;
 	border: 2px solid transparent;
 }
+
+.file{
+	height: 75px;
+	width: 250px;
+	color: var(--color);
+	background-color: #202020;
+	border-radius: 8px;
+	padding: 0.5em 1em 0.5em 1em;
+	transition: 0.2s;
+	border:2px solid rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	
+}
+.file:hover{
+	cursor: pointer;
+	border:2px solid var(--theme);
+}
+.file img{
+	float:left;
+	height: 70px;
+	margin-right: 15px;
+}
