@@ -163,6 +163,10 @@ body{
 	background: url(assets/icons/youtube.svg);
 	background-size: cover;
 }
+.sicon.email{
+	background: url(assets/icons/email.svg);
+	background-size: cover;
+}
 .project{
 	display: flex;
 	flex-direction: column;
