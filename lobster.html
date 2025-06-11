@@ -1,0 +1,62 @@
+<!--Autism-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      html{
+        font-family: 'Roboto', sans-serif;
+        background:grey;
+      }
+      .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      img {
+          width: 200px;
+          height: 300px;
+          transition: transform 0.2s;
+          cursor:pointer;
+      }
+
+      /* Animation */
+      @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
+      }
+
+      .bounce {
+          animation: bounce 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="bouncingImage" onclick="bounceImage()"
+        src="assets/Blue_Lobster.webp" />
+    </div>
+
+    <script>
+      const image = document.getElementById("bouncingImage");
+      const audio = new Audio("assets/bounce.mp3");
+
+      function bounceImage() {
+          image.classList.add("bounce");
+          audio.play();
+          // Remove the 'bounce' class after the animation is complete to enable clicking again
+          setTimeout(() => image.classList.remove("bounce"), 400);
+      }
+
+      // Add a click event listener to the image
+      image.addEventListener("click", bounceImage);
+      
+          </script>
+
+
+  </body>
+
+</html>
