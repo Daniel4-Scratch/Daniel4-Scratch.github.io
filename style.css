@@ -197,6 +197,10 @@ body{
 	background: url(assets/icons/vsc.svg);
 	background-size: cover;
 }
+.picon.vs{
+	background: url(assets/icons/vs.svg);
+	background-size: cover;
+}
 .picon.figma{
 	background: url(assets/icons/figma.svg);
 	background-size: cover;
