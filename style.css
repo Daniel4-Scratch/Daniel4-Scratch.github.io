@@ -87,6 +87,9 @@ body{
 .page-content h2{
 	font-size: 1.5em;
 }
+#knowledge .page-content h2{
+	line-height: 0.5em;
+}
 .page-content h3{
 	font-size: 1.2em;
 }
