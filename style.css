@@ -7,6 +7,8 @@
 	--background-alt:#282828;
 	--color:white;
 	--color-secondary:rgba(255,255,255,0.8);
+	/* Accessible link color on dark backgrounds (AA on #303030) */
+	--link:#ffc2c2;
 }
 
 body{
@@ -122,11 +124,11 @@ body{
 	color: var(--color-secondary);
 }
 .page-content a{
-	color: var(--theme);
+	color: var(--link);
 	text-decoration: none;
 }
 .page-content a:hover{
-	color: var(--theme);
+	color: var(--link);
 	text-decoration: underline;
 }
 .page-content ul{
@@ -160,7 +162,8 @@ body{
 }
 .sicon:focus, .sicon:hover{
 	outline: 2px solid var(--theme);
-	outline-offset: 2px;
+  	outline-offset: -1px;
+  	border-radius: 13px;
 }
 .sicon.discord{
 	background: url(assets/icons/discord.svg);
@@ -269,7 +272,7 @@ body{
 	text-decoration: none;
 }
 .project .btn:hover{
-	color: var(--color);
+	color: #000;
 	background-color: var(--theme);
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -292,7 +295,7 @@ th, td{
 }
 table th{
 	background-color: var(--theme);
-	color: var(--color);
+	color: #000; /* Ensure sufficient contrast on themed header */
 }
 
 tr:nth-child(odd){background-color: var(--background-alt);}
