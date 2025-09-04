@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <style>
     .material-symbols-rounded {
@@ -8,28 +8,53 @@
   </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daniel — hobbyist programmer in Australia. Projects, blog, and ways to get in touch." />
+  <meta name="theme-color" content="#ff6060" />
+  <link rel="canonical" href="https://daniel4-scratch.is-a.dev/" />
+  <meta property="og:title" content="Daniel — Developer" />
+  <meta property="og:description" content="Projects, blog, and ways to get in touch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daniel4-scratch.is-a.dev/" />
+  <meta property="og:image" content="https://daniel4-scratch.is-a.dev/assets/profile.png" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
-  <title>Home</title>
+  <title>Daniel — Developer</title>
   <link rel="icon" href="assets/light.png" />
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="nav-wrapper">
-    <div class="navbar"></div>
+    <div class="navbar" role="navigation" aria-label="Primary"></div>
   </div>
-  <div class="page-content">
+  <main id="main-content">
+  <div class="page-content" aria-labelledby="intro-heading">
     <div class="banner">
-      <img src="assets/profile.png" alt="profile" class="profile-img" />
+      <img src="assets/profile.png" alt="Profile picture" class="profile-img" />
     </div>
-    <h2>I'm Daniel</h2>
+    <h1 id="intro-heading">I'm Daniel</h1>
     <p>
       Hi, I'm Daniel, a 16 y/o hobbyist programmer based in Australia.<br />
       <a href="blog.html">See my blog</a>
     </p>
+  </div>
+  <div class="page-content">
+    <div style="
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: center;
+        ">
+  <a href="https://discord.com/users/853820912628269088" class="sicon discord" aria-label="Discord profile" target="_blank" rel="noopener noreferrer"></a>
+  <a href="mailto:daniel4scratchhelp@gmail.com" class="sicon email" aria-label="Email Daniel"></a>
+  <a href="https://github.com/daniel4-scratch" class="sicon github" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer"></a>
+  <a href="https://youtube.com/@daniel4-dev" class="sicon youtube" aria-label="YouTube channel" target="_blank" rel="noopener noreferrer"></a>
+      <!-- <a href="https://postlit.dev/users/daniel4scratch" class="sicon postlit"></a> -->
+    </div>
   </div>
   <div class="page-content" id="knowledge">
     <h2>Knowledge</h2>
@@ -40,10 +65,10 @@
           width: 100%;
           justify-content: center;
         ">
-      <i class="picon js" alt="JavaScript"></i>
-      <i class="picon py" alt="Python"></i>
-      <i class="picon lua" alt="Lua"></i>
-      <i class="picon node" alt="Node.js"></i>
+  <span class="picon js" role="img" aria-label="JavaScript"></span>
+  <span class="picon py" role="img" aria-label="Python"></span>
+  <span class="picon lua" role="img" aria-label="Lua"></span>
+  <span class="picon node" role="img" aria-label="Node.js"></span>
     </div>
     <h2>Learning</h2>
     <div style="
@@ -53,7 +78,7 @@
           width: 100%;
           justify-content: center;
         ">
-      <i class="picon cpp" alt="C++"></i>
+  <span class="picon cpp" role="img" aria-label="C++"></span>
     </div>
     <h2>Software</h2>
     <div style="
@@ -63,28 +88,15 @@
           width: 100%;
           justify-content: center;
         ">
-      <i class="picon vsc" alt="Visual Studio Code"></i>
-      <i class="picon vs" alt="Visual Studio"></i>
-      <i class="picon figma" alt="Figma"></i>
-      <i class="picon fusion" alt="Fusion 360"></i>
-      <i class="picon rblx" alt="Roblox Studio"></i>
+    <span class="picon vsc" role="img" aria-label="Visual Studio Code"></span>
+    <span class="picon vs" role="img" aria-label="Visual Studio"></span>
+    <span class="picon figma" role="img" aria-label="Figma"></span>
+    <span class="picon fusion" role="img" aria-label="Fusion 360"></span>
+    <span class="picon rblx" role="img" aria-label="Roblox Studio"></span>
     </div>
   </div>
-  <div class="page-content">
-    <div style="
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          width: 100%;
-          justify-content: center;
-        ">
-      <a href="https://discord.com/users/853820912628269088" class="sicon discord"></a>
-      <a href="mailto:daniel4scratchhelp@gmail.com" class="sicon email"></a>
-      <a href="https://github.com/daniel4-scratch" class="sicon github"></a>
-      <a href="https://youtube.com/@daniel4-dev" class="sicon youtube"></a>
-      <!-- <a href="https://postlit.dev/users/daniel4scratch" class="sicon postlit"></a> -->
-    </div>
-  </div>
+  </main>
+  
 </body>
 
 </html>
