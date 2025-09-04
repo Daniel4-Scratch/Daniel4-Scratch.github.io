@@ -2,7 +2,7 @@ console.log("Hello there! :)")
 
 document.querySelector(".navbar").innerHTML = `<a href="index.html"><i class="ri-home-2-fill"></i><p>Home</p></a>
       <a href="portfolio.html"><i class="ri-git-repository-fill"></i><p>Portfolio</p></a>
-      <a href="about.html"><i class="ri-user-fill"></i><p>About</p></a>`
+      <a href="blog.html"><i class="ri-article-fill"></i><p>Blog</p></a>`
 
 
 // Autism
