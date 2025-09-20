@@ -101,8 +101,9 @@ body{
 }
 .page-content h2{
 	font-size: 1.5em;
+	font-weight: 350;
 }
-#knowledge .page-content h2{
+#knowledge{
 	line-height: 0.5em;
 }
 .page-content h3{
@@ -234,6 +235,10 @@ body{
 }
 .picon.rblx{
 	background: url(assets/icons/rblx.svg);
+	background-size: cover;
+}
+.picon.clion{
+	background: url(assets/icons/clion.svg);
 	background-size: cover;
 }
 .project{
