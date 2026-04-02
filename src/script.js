@@ -109,7 +109,7 @@ const commands = {
     term.writeln('\r\n' + colors.bold + 'My Socials:' + colors.reset);
     term.writeln(`GitHub: ${colors.blue}https://github.com/daniel4-scratch${colors.reset}`);
     term.writeln(`Discord: ${colors.blue}\x1b]8;;https://discord.com/users/853820912628269088\x1b\\@daniel4scratch${colors.reset}\x1b]8;;\x1b\\`);
-    term.writeln(`Youtube: ${colors.blue}https://youtube.com/@daniel4dev${colors.reset}`);
+    term.writeln(`Youtube: ${colors.blue}https://youtube.com/@daniel4-dev${colors.reset}`);
     term.writeln(`Mail: ${colors.blue}daniel4scratchhelp@gmail.com${colors.reset}`)
   },
   stack: (term) => {
